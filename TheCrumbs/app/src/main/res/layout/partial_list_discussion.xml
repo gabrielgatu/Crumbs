@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/author_image"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_no_photo"
+        android:scaleType="centerCrop"
+        app:corner_radius="30dip"
+        app:border_width="0dip"
+        app:border_color="@color/default_primary_dark"
+        app:mutate_background="true"
+        app:oval="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/author_image">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="65dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/text"
+            android:text="Dove posso comprare un gelato e shalalallalalalalalalala?"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/title"
+            android:fontFamily="sans-serif-light"
+            android:textSize="14sp"
+            android:textColor="@color/text"
+            android:text="Dove posso comprare un gelato e shalalallalalalalalalala?"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-light"
+            android:textSize="13sp"
+            android:textColor="@color/text"
+            android:text="Aug 24"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

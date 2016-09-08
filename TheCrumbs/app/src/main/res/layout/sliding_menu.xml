@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/navigation_drawer_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/user_image_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_no_photo"
+            android:alpha=".7"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#ffffff"
+                android:text="Akash Bangad"
+                android:textSize="14sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:text="akash.bangad93@gmail.com"
+                android:textSize="14sp"
+                android:textStyle="normal"
+
+                />
+        </LinearLayout>
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/user_no_photo"
+            android:scaleType="centerCrop"
+            app:corner_radius="30dip"
+            app:border_width="2dip"
+            app:border_color="@color/white"
+            app:mutate_background="true"
+            app:oval="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/sliding_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawer_logout_button"
+        android:textColor="@color/white"
+        android:text="Logout"/>
+
+</LinearLayout>

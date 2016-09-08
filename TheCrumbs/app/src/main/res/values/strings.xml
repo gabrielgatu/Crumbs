@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">TheCrumbs</string>
+    <string name="title_activity_discussion_detail">Discussion</string>
+    <string name="title_activity_new_discussion">New Discussion</string>
+    <string name="title_activity_login">TheCrumbs</string>
+    <string name="title_activity_signup">Sign Up</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_profile_edit">ProfileEditActivity</string>
+    <string name="title_activity_friends">FriendsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="error_message_send_empty_message">Please enter a valid message</string>
+    <string name="discussion_created_with_success">Discussion created with success</string>
+    <string name="error_discussion_creation">Cannot create the discussion.</string>
+    <string name="discussion_new_tip">Write what about the discussion you want to be of. Express yourself in the best way, so others can easly understand!</string>
+    <string name="discussion_new_title_tip">Title...</string>
+    <string name="discussion_new_text_tip">Your text here...</string>
+    <string name="email">E-mail</string>
+    <string name="hint_your_name">Your name</string>
+    <string name="hint_your_email">Your e-mail</string>
+</resources>
